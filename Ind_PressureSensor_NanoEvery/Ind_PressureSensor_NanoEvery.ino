@@ -1,13 +1,14 @@
 
 /*********************************************************************
-  This interactive device is an electronic circuit that is able to sense
-  the environment by using a sensor (electronic components that convert real-world
-  measurements into electrical signals). The device processes the
-  information it gets from the sensors with behaviour that’s
-  described in the software. The device will then be able to interact
-  with the world by using actuators, electronic components
-  that can convert an electric signal into a physical action.
-
+ This sketch controls an electronic circuit that can sense 
+ the environment using a sensor (electronic components that convert 
+ real-world measurements into electrical signals). The device 
+ processes the information from the sensors with the behavior 
+ described in the sketch. The device will then be able to interact 
+ with the world by using actuators, electronic components that can 
+ convert an electric signal into physical action.
+ 
+ EETechFix
 *********************************************************************/
 
 #include <SPI.h>
