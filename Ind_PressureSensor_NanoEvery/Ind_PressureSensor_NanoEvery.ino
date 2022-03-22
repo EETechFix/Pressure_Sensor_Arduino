@@ -1,4 +1,3 @@
-
 /*********************************************************************
  This sketch controls an electronic circuit that can sense 
  the environment using a sensor (electronic components that convert 
