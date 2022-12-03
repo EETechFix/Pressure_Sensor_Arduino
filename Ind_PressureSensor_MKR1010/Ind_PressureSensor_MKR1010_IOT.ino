@@ -90,7 +90,7 @@ void loop() {
   ArduinoCloud.update();
 
   sensorVal = (float)analogRead(sensorPin);
-  filteredVal = (alpha * filteredVal) + ((1 - alpha) * sensorVal); // Low Pass Filter
+  filteredVal = (alpha * filteredVal) + ((1.0 - alpha) * sensorVal); // Low Pass Filter
   voltage = (filteredVal / 4096.0) * aRef;
   float psi = (37.5939 * voltage) - 13.5338; // y=mx+b
   psiVal = roundoff(psi, 1);
@@ -98,7 +98,7 @@ void loop() {
   updateOLED ();
 
   sensorVal_2 = (float)analogRead(ADC_BATTERY);
-  filteredVal_2 = (alpha_2 * filteredVal_2) + ((1 - alpha_2) * sensorVal_2); // Low Pass Filter
+  filteredVal_2 = (alpha_2 * filteredVal_2) + ((1.0 - alpha_2) * sensorVal_2); // Low Pass Filter
   voltage_2 = (filteredVal_2 / 4096.0) * aRef;
   float batteryVolts = (1.275 * voltage_2);
   batteryVal = roundoff(batteryVolts, 1);
