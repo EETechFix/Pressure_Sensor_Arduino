@@ -50,7 +50,7 @@ void setup()   {
 void loop() {
 
   sensorVal = (float)analogRead(sensorPin); // Read pressure sensor val (A0)
-  filteredVal = (alpha * filteredVal) + ((1 - alpha) * sensorVal);// Low Pass Filter
+  filteredVal = (alpha * filteredVal) + ((1.0 - alpha) * sensorVal);// Low Pass Filter
   voltage = (filteredVal / 1024.0) * aRef; // calculate voltage
   psiVal = (voltage - 0.4784) / 0.0401; // x=(y-b)/m
 
